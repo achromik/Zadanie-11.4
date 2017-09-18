@@ -3,9 +3,9 @@ function Phone(brand, price, color ) {
     this.price = price;
     this.color= (color!=undefined ? color : "No info");
     this.VAT = 23;
-    accesories = [];
-	powerState = 0;
-	OS = undefined;
+    this.accesories = [];
+	this.powerState = 0;
+	this.OS = undefined;
 }
 
 Phone.prototype = {
@@ -22,8 +22,7 @@ Phone.prototype = {
 	},
 
 	getPrice : function() {
-		var self = this;
-		return self.price;
+		return this.price;
 	},
 
 	setVAT : function(VAT) {
