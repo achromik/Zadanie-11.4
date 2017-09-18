@@ -5,7 +5,7 @@ function Phone(brand, price, color ) {
     this.VAT = 23;
     this.accesories = [];
 	this.powerState = 0;
-	this.OS = undefined;
+	// OS = undefined;
 }
 
 Phone.prototype = {
@@ -51,7 +51,7 @@ Phone.prototype = {
 	},
 
 	powerToggle : function() {
-		this.powerState = (powerState) ? 0 : 1;
+		this.powerState = (this.powerState) ? 0 : 1;
 	},
 
 	getPowerState : function() {
